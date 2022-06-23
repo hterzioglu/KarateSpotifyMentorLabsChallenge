@@ -1,0 +1,68 @@
+{
+  "token": "BQDVV1Mqar097neMlD5ddJWmYfM-9Q8mYeUMgdlN7IwSXgOu_D_ORa_o6cRqe2zV--2O9B8j90fHJBkUSX7t7fEV_jNxiznhNvb_meVZJWNVAP9sm-c_TJmbkF354yefPoyg73BFdMu-58HfkxJM2-5bZlT7JDIe5eBDZaRToRuIf_iaIWDKeEF96dhW68v5nFtn7AWemWLR3cFJxT0TcMZ_VbP-sTAT6fB0iFMQSoPLni9zxR1PsONBQSXZE4ud1kRcZfYJSDoXYoy4xvTQq3U10w",
+  "email": "hayrettin.terzioglu@testinium.com",
+  "password": "testData",
+  "WrongEmail": "invalidMailDeneme@zamazingo.com",
+  "WrongPassword": "yanlissifre",
+  "playlistInput": "müzik",
+  "searchInput": "Adamlar Kapısı Kapalı",
+
+  "login": {
+    "firstOturumAc":"button[data-testid=login-button]",
+    "userName": "#login-username",
+    "passWord": "#login-password",
+    "oturumAc": ".ButtonInner-sc-14ud5tc-0.lbsIMA.encore-bright-accent-set"},
+
+  "search":{
+    "searchButton": "//a[@href='/search']",
+    "searchBox": "//input[@class='Type__TypeElement-goli3j-0 ebHsEf QO9loc33XC50mMRUCIvf']"
+  },
+
+  "favsong":{
+    "begenilensarkilar": ".Type__TypeElement-goli3j-0.eHCcSU.standalone-ellipsis-one-line.ot6VAZq1Xfbw2Vh8Qt_A",
+    "sarkibegen": ".Fm7C3gdh5Lsc9qSXrQwO.tGKwoPuvNBNK3TzCS5OH"
+  },
+
+  "playList": {
+    "pickPlayList":".AINMAUImkAYJd4ertQxy",
+    "playSong":".ButtonInner-sc-14ud5tc-0.gHYQaG.encore-bright-accent-set",
+    "playlistSearch": ".Type__TypeElement-goli3j-0.ebHsEf.l42JW4EP_5CU1Ba7jYIc",
+    "addSong": "button[data-testid=add-to-playlist-button]",
+    "UçNokta": "button[data-testid=more-button]",
+    "goPlaylistRadio": "{span}Çalma listesi radyosuna git",
+    "playWithRadio": ".IconWrapper__Wrapper-sc-1hf1hjl-0.dZGDpi",
+    "stopPlay": "button[data-testid=control-button-playpause]"
+    },
+
+  "kitaplik": {
+    "tiklaKitaplik": "//a[@href='/collection']",
+    "sirayaEkle": ".Type__TypeElement-goli3j-0.ebHsEf.ellipsis-one-line.PDPsYDh4ntfQE3B4duUI",
+    "goPodcast": "//a[@href='/collection/podcasts']",
+    "hepsiniGor": ".a7lvtXATo3HALtrsOHtO.HOgue4Eg4UdBR58M0633",
+    "podcastClick": "//a[@href='/show/3ZK1GgKPXqDkmW6z3rTtpi']",
+    "episodeClick": "//a[@href='/episode/4XOTx38PjbLvZcM8dNm40q']",
+    "playPodcast": ".IconWrapper__Wrapper-sc-1hf1hjl-0.dZGDpi",
+    "stopPodcast": ".IconWrapper__Wrapper-sc-1hf1hjl-0.dZGDpi"
+  },
+
+  "logout": {
+
+    "clickProfile": "button[data-testid=user-widget-link]",
+    "clickLogout": "button[data-testid=user-widget-dropdown-logout]"
+  },
+
+  "RequestBody2": {
+    "name": "HayrettinPlayList",
+    "description": "Bu bir playList tir :)",
+    "public": false
+  },
+
+  "RequestBody": {
+    "name": "MentorLabs Faz2",
+    "description": "New playlist api deneme",
+    "public": false
+  }
+
+
+  }
+
