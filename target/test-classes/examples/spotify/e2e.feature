@@ -70,6 +70,8 @@ Feature: e2e
       * waitFor(kitaplik.tiklaKitaplik).click()
       * waitFor(kitaplik.goPodcast).click()
       * waitFor(kitaplik.hepsiniGor).click()
+       And scroll("//a[@href='/show/3ZK1GgKPXqDkmW6z3rTtpi']")
+      And delay(7000)
       * waitFor(kitaplik.podcastClick).click()
       * waitFor(kitaplik.episodeClick).click()
       * waitFor(kitaplik.playPodcast).click()

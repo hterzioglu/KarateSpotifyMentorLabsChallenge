@@ -70,16 +70,19 @@ Feature: e2e
       * waitFor(kitaplik.tiklaKitaplik).click()
       * waitFor(kitaplik.goPodcast).click()
       * waitFor(kitaplik.hepsiniGor).click()
+       And scroll("//a[@href='/show/3ZK1GgKPXqDkmW6z3rTtpi']")
+      And delay(2000)
       * waitFor(kitaplik.podcastClick).click()
+      And match text('.Type__TypeElement-goli3j-0.hVBZRJ') == 'IŞIKLA UYUMLANMA MEDİTASYONU : Ruhunuzun Işığıyla Buluşun'
+      And print('Doğru podcast seçildi')
+      And delay(2000)
       * waitFor(kitaplik.episodeClick).click()
       * waitFor(kitaplik.playPodcast).click()
       And delay(5000)
       * waitFor(kitaplik.stopPodcast).click()
       * waitFor(logout.clickProfile).click()
       * waitFor(logout.clickLogout).click()
-      And match text('.Type__TypeElement-goli3j-0.hVBZRJ') == 'IŞIKLA UYUMLANMA MEDİTASYONU : Ruhunuzun Işığıyla Buluşun'
-      And print('Doğru podcast seçildi')
-      And delay(2000)
+
 
 
 
