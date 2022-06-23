@@ -82,6 +82,7 @@ Feature: e2e
       * waitFor(kitaplik.stopPodcast).click()
       * waitFor(logout.clickProfile).click()
       * waitFor(logout.clickLogout).click()
+      And delay(2000)
 
 
 
