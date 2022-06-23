@@ -4,7 +4,7 @@ Feature: e2e
     * call read 'locator.json'
 
     * def id = '31444nwg4cu6zvxn2jdqaa5yp5dm'
-    * def token = 'Bearer BQCFAA1W1yJRh94KI0sVMyF1SLrDfnStIu_T3RWtAeG2MB7d24Pf_paFtxXmufuhmghYsyBO-KtvVC2wwnQ6e-lncYLAbr7urq3GNCt5y_4rS4_vZd4V2JInet_0IM_EpXgWqktyz5uTxcwJdvTsAPK2i9IO_F7wX-kC68KXOv8po0gIrb01pI1L9_um-90c9432SH-LpkOe2ifZ6mu6bjhKndhibgJNi_RzHWARPKceRkKDZKv43tkg5jA9Vh6Z_B0FMf3qPXio8rsso6YfM0h8'
+    * def token = 'Bearer BQAQcg2mVyms_5EMInps1glXX7IRQ2qm65IAVLrpuHYcCoRt0rD_7cqOGTdOdLe2f7ypZel7eqHyTHeR65QECzkrRcKMmEqcxYn7uNPhy6tN-GcXu3Vnkzm_loNvjTwrAbhS2_Ip_ly61DHaMMG-hsMtIuWT5OzZHbGTX9woZIVcnpScCsnP5avhGyx4WxnoyIzLXxghzLlGN864Z-eLOd9pRvtOycNWDinSpXmUgQDhuq_938t1gIuSd6_9enOQTbW-iTh6ttuhLDqY2z6QuDoB'
     Scenario: Spotify Challenge EndtoEnd Hybrid Senaryo
       Given driver 'https://open.spotify.com/'
       * maximize()
@@ -77,6 +77,8 @@ Feature: e2e
       * waitFor(kitaplik.stopPodcast).click()
       * waitFor(logout.clickProfile).click()
       * waitFor(logout.clickLogout).click()
+      And match text('.Type__TypeElement-goli3j-0.hVBZRJ') == 'IŞIKLA UYUMLANMA MEDİTASYONU : Ruhunuzun Işığıyla Buluşun'
+      And print('Doğru podcast seçildi')
       And delay(2000)
 
 
