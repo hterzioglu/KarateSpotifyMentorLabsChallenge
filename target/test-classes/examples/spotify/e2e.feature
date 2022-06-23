@@ -4,7 +4,7 @@ Feature: e2e
     * call read 'locator.json'
 
     * def id = '31444nwg4cu6zvxn2jdqaa5yp5dm'
-    * def token = 'Bearer BQAQcg2mVyms_5EMInps1glXX7IRQ2qm65IAVLrpuHYcCoRt0rD_7cqOGTdOdLe2f7ypZel7eqHyTHeR65QECzkrRcKMmEqcxYn7uNPhy6tN-GcXu3Vnkzm_loNvjTwrAbhS2_Ip_ly61DHaMMG-hsMtIuWT5OzZHbGTX9woZIVcnpScCsnP5avhGyx4WxnoyIzLXxghzLlGN864Z-eLOd9pRvtOycNWDinSpXmUgQDhuq_938t1gIuSd6_9enOQTbW-iTh6ttuhLDqY2z6QuDoB'
+    * def token = 'Bearer BQC0sxQm7QIbyxv86Z68okjZp7-5sh_5zn7SQBZ9dCrk04NIqu8uw8HHbFq-P7gyVNJT9MRoxHl3l-vgrJQuQz-F-1zU3sNo55JyfHCMzErdfWeVp2LZQk479fcOzbRPJwCLG1vmVps8S--LnGFKRML0ejWJl2f78LISDC_lbG879TTYahAqo1QI0TMI0K-zf5VUBGEAWWL6g0d7Ir58ltKlqANY-amBda0F88-hqRdOs-Hv5gakzoeBXDgsMjcUdVTdCWubERMnsvr7NFHVSgR_'
     Scenario: Spotify Challenge EndtoEnd Hybrid Senaryo
       Given driver 'https://open.spotify.com/'
       * maximize()
@@ -71,17 +71,19 @@ Feature: e2e
       * waitFor(kitaplik.goPodcast).click()
       * waitFor(kitaplik.hepsiniGor).click()
        And scroll("//a[@href='/show/3ZK1GgKPXqDkmW6z3rTtpi']")
-      And delay(7000)
+      And delay(2000)
       * waitFor(kitaplik.podcastClick).click()
+      And match text('.gSx70PISJg6PSRafbOXd.C7eyib8lynZrycU2Eh_A.H0vWBc23fJOetym6NudG') == 'Yesim Bayraktar'
+      And print('Doğru podcast seçildi')
+      And delay(2000)
       * waitFor(kitaplik.episodeClick).click()
       * waitFor(kitaplik.playPodcast).click()
       And delay(5000)
       * waitFor(kitaplik.stopPodcast).click()
       * waitFor(logout.clickProfile).click()
       * waitFor(logout.clickLogout).click()
-      And match text('.Type__TypeElement-goli3j-0.hVBZRJ') == 'IŞIKLA UYUMLANMA MEDİTASYONU : Ruhunuzun Işığıyla Buluşun'
-      And print('Doğru podcast seçildi')
       And delay(2000)
+
 
 
 
