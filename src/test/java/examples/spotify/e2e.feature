@@ -74,8 +74,8 @@ Feature: e2e
       And delay(2000)
       * waitFor(kitaplik.podcastClick).click()
       And match text('.gSx70PISJg6PSRafbOXd.C7eyib8lynZrycU2Eh_A.H0vWBc23fJOetym6NudG') == 'Yesim Bayraktar'
-      # dogru podcast seçildigi dogrulanır
       And print('Doğru podcast seçildi')
+      # dogru podcast seçildigi dogrulanır
       And delay(2000)
       * waitFor(kitaplik.episodeClick).click()
       * waitFor(kitaplik.playPodcast).click()
