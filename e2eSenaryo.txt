@@ -1,0 +1,41 @@
+EndtoEnd Senaryo
+
+1) openspotify.com sitesine gidilir
+2) Anasayfanın açıldığı kontrol edilir
+3) Oturum aç butonuna tıklanır
+4) email ve password kutusu boş bırakılır ve login yapılır
+5) yanlış email ve password girilip giriş yaptırılır
+6) Başarılı bir şekilde giriş yapılır
+7) Başarılı bir şekilde giriş yapıldığı kontrol edilir
+8) Arama Butonuna tıklanır
+9) "Adamlar Kapısı Kapalı" şarkısı aratılır
+10)"Adamlar Kapısı Kapalı" şarkısı beğenilen şarkılara eklenir
+11) Begenilen şarkılara tıklanır
+12) "Adamlar Kapısı Kapalı" şarkısının begenilen şarkılara eklendiği kontrol edilir
+13) "Adamlar Kapısı Kapalı" şarkısı begenilenlerden kaldırılır (senaryo tekrar çalıştıgında tekrar ekleme butonuna bastıgı için ekli olanı çıkartıyordu böyle bir çözüm buldum)
+14) "HayrettinPlayList" isimli bir çalma listesi oluşturulur (API)
+15) sayfa refresh edilir
+16) "HayrettinPlayList" ' de "müzik" kelimesi aratılır
+17) Emircan İğrek Müzik Kutusu şarkısı playliste eklenir
+18) Şarkının eklendiği kontrol edilir
+19) Çalma listesi radyosuna gidilir
+20) Çalma listesi radyosunda play tuşuna basılır
+21) Çalan şarkı durdurulur
+22) Sol bar da yer alan kitaplığın butonuna tıklanır
+23) Podcast'ler e tıklanır
+24) Hepsini göre tıklanır
+25) Scroll ettirilir
+26) yeşimin şifa evi podcasti seçilir
+27) Bölüm seçilir
+28) play tuşuna basılır
+29) podcast durdurulur
+30) sağ üstte ki profil butonuna tıklanır
+31) oturumu kapata tıklanır
+
+
+
+
+
+
+
+
